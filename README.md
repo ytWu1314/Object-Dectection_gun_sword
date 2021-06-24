@@ -6,13 +6,13 @@
 
 * 打开NVIDIA 控制面板，点击系统信息，查看NVVUDA64.DLL
 
-![image-20210609220243258](C:\Users\PC_SKY_WYT\AppData\Roaming\Typora\typora-user-images\image-20210609220243258.png)
+![image-20210609220243258](https://github.com/ytWu1314/Object-Dectection_gun_sword/blob/master/images/image-20210609220243258.png)
 
 
 
 * 根据我的电脑的配置以及 [此链接](https://github.com/fo40225/tensorflow-windows-wheel) 找到对应的版本为11.0.2
 
-![image-20210610012502664](C:\Users\PC_SKY_WYT\AppData\Roaming\Typora\typora-user-images\image-20210610012502664.png)
+![image-20210610012502664](https://github.com/ytWu1314/Object-Dectection_gun_sword/blob/master/images/image-20210610012502664.png)
 
 * 再访问[CUDA](https://developer.nvidia.com/cuda-downloads) 下载11.0.2版本
 
@@ -42,9 +42,9 @@
 1. opencv 需要配置环境变量，具体可以参考 [有道笔记](https://note.youdao.com/ynoteshare1/index.html?id=04fb326760a726f23cbd9ae8ff6b1fc6&type=note#/)  有配置过其他编译器的往系统环境变量添加都是基本操作。
 2. 在安装CUDA的时候需要把"VS"选项勾选
 
-![image-20210610015329242](C:\Users\PC_SKY_WYT\AppData\Roaming\Typora\typora-user-images\image-20210610015329242.png)
+![image-20210610015329242](https://github.com/ytWu1314/Object-Dectection_gun_sword/blob/master/images/image-20210610015329242.png)
 
-3. 如果没有此路径 `C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\BuildCustomizations` 下的文件夹以及文件，需要自己创建。![image-20210610015621536](C:\Users\PC_SKY_WYT\AppData\Roaming\Typora\typora-user-images\image-20210610015621536.png)
+3. 如果没有此路径 `C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\BuildCustomizations` 下的文件夹以及文件，需要自己创建。![image-20210610015621536](https://github.com/ytWu1314/Object-Dectection_gun_sword/blob/master/images/image-20210610015603066.png)
 
 4. VS需要配置opencv的各种库，避免生成darknet报错，具体可以参考 [有道笔记](https://note.youdao.com/ynoteshare1/index.html?id=04fb326760a726f23cbd9ae8ff6b1fc6&type=note#/)。
 
@@ -54,7 +54,7 @@
 
 7. 可以参考此 [B站](https://www.bilibili.com/video/BV1ap4y1e7ng/) 视频，实现生成darknet
 
-8. 在/x64 路径下运行如`darknet detect yolov4.cfg yolov4.weights dog.jpg`  会如下图片说明darknet安装成功。![image-20210610231301948](C:\Users\PC_SKY_WYT\AppData\Roaming\Typora\typora-user-images\image-20210610231301948.png)
+8. 在/x64 路径下运行如`darknet detect yolov4.cfg yolov4.weights dog.jpg`  会如下图片说明darknet安装成功。![image-20210610231301948](https://github.com/ytWu1314/Object-Dectection_gun_sword/blob/master/images/image-20210610231301948.png)
 
    
 
@@ -66,13 +66,13 @@
 
 * 用VOTT 1.7 版本将`gun_sword_data\data\train` 里面61张图片坐上标记，分别为`guns`  `swards` 需要耐心一张张做，然后导出 YOLO格式 
 
-![image-20210610233233749](C:\Users\PC_SKY_WYT\AppData\Roaming\Typora\typora-user-images\image-20210610233233749.png)
+![image-20210610233233749](https://github.com/ytWu1314/Object-Dectection_gun_sword/blob/master/images/image-20210610233233749.png)
 
 
 
 * 标记完成之后导出数据, 把`vott` 导出的`output\data`文件夹里的`obj`文件夹、 `obj.names`文件、`obj.data`文件、`test.txt`文件`和train.txt`文件全都放进`build\darknet\×64\data\`文件夹里. 
 
-![image-20210610232101948](C:\Users\PC_SKY_WYT\AppData\Roaming\Typora\typora-user-images\image-20210610232101948.png)
+![image-20210610232101948](https://github.com/ytWu1314/Object-Dectection_gun_sword/blob/master/images/image-20210610232101948.png)
 
 
 
@@ -80,7 +80,7 @@
 
 1. 在[这里](https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v4_pre/yolov4-tiny.conv.29)下载`yolov4-tiny29.conv.29` 文件, 下载完成之后把这个文件放到`build\darknet\×64\`目录下
 
-![image-20210610232229279](C:\Users\PC_SKY_WYT\AppData\Roaming\Typora\typora-user-images\image-20210610232229279.png)
+![image-20210610232229279](https://github.com/ytWu1314/Object-Dectection_gun_sword/blob/master/images/image-20210610232229279.png)
 
 
 
@@ -102,7 +102,7 @@
 
 
 
-![chart](C:\Users\PC_SKY_WYT\Desktop\mixEd\DeepLearning\Deeplearning_Sources\pcskywyt-darknet-master\darknet\build\darknet\x64\chart.png)
+![chart](https://github.com/ytWu1314/Object-Dectection_gun_sword/blob/master/images/chart.png)
 
 
 
@@ -113,13 +113,13 @@
 1. 到[这个网站](https://github.com/Cartucho/mAP)下载这个项目的代码**（之前的input数据删除）**
 2. 把验证集中的测试图片放到`map\input\images-optional`目录下
 
-![image-20210610233717596](C:\Users\PC_SKY_WYT\AppData\Roaming\Typora\typora-user-images\image-20210610233717596.png)
+![image-20210610233717596](https://github.com/ytWu1314/Object-Dectection_gun_sword/blob/master/images/image-20210610233717596.png)
 
 
 
 3. 把用`vott`输出的所有测试图片对应的`.txt`文件放到`map\input\ground-truth`目录下
 
-![image-20210610233737853](C:\Users\PC_SKY_WYT\AppData\Roaming\Typora\typora-user-images\image-20210610233737853.png)
+![image-20210610233737853](https://github.com/ytWu1314/Object-Dectection_gun_sword/blob/master/images/image-20210610233737853.png)
 
 
 
@@ -205,13 +205,13 @@ for line in alllines:
 
 
 
-![image-20210610232756539](C:\Users\PC_SKY_WYT\AppData\Roaming\Typora\typora-user-images\image-20210610232756539.png)
+![image-20210610232756539](https://github.com/ytWu1314/Object-Dectection_gun_sword/blob/master/images/image-20210610232756539.png)
 
 
 
-**sawrds代表的是sword（手误）**
+**sawrds代表的是swords（手误）**
 
-![mAP](C:\Users\PC_SKY_WYT\Desktop\mixEd\DeepLearning\Deeplearning_Sources\吴宇涛_20192131089_期末作业_物体检测\mAP.png)
+![mAP](https://github.com/ytWu1314/Object-Dectection_gun_sword/blob/master/images/mAP.png)
 
 
 
