@@ -1,0 +1,62 @@
+ CUDNN_HALF=1 
+net.optimized_memory = 0 
+mini_batch = 1, batch = 1, time_steps = 1, train = 0 
+Create CUDA-stream - 0 
+ Create cudnn-handle 0 
+nms_kind: greedynms (1), beta = 0.600000 
+nms_kind: greedynms (1), beta = 0.600000 
+
+ seen 64, trained: 384 K-images (6 Kilo-batches_64) 
+Enter Image Path:  Detection layer: 30 - type = 28 
+ Detection layer: 37 - type = 28 
+data/obj/5f373981ff0c6356.jpg: Predicted in 1630.595000 milli-seconds.
+guns: 99%	(left_x:  115   top_y:  130   width:  666   height:  786)
+Enter Image Path:  Detection layer: 30 - type = 28 
+ Detection layer: 37 - type = 28 
+data/obj/1a7544cff439c995.jpg: Predicted in 6.763000 milli-seconds.
+guns: 42%	(left_x:  312   top_y:  177   width:  529   height:  311)
+Enter Image Path:  Detection layer: 30 - type = 28 
+ Detection layer: 37 - type = 28 
+data/obj/1c7365887d7cbea7.jpg: Predicted in 6.845000 milli-seconds.
+guns: 100%	(left_x:  221   top_y:   63   width:  568   height:  540)
+Enter Image Path:  Detection layer: 30 - type = 28 
+ Detection layer: 37 - type = 28 
+data/obj/2c8ce42709516c79.jpg: Predicted in 6.785000 milli-seconds.
+Enter Image Path:  Detection layer: 30 - type = 28 
+ Detection layer: 37 - type = 28 
+data/obj/3afade0f14091716.jpg: Predicted in 6.753000 milli-seconds.
+guns: 53%	(left_x:    3   top_y:  394   width:  188   height:  141)
+guns: 92%	(left_x:   93   top_y:  163   width:  219   height:  157)
+guns: 84%	(left_x:  245   top_y:   74   width:  226   height:  180)
+Enter Image Path:  Detection layer: 30 - type = 28 
+ Detection layer: 37 - type = 28 
+data/obj/5f953a156f41fb9f.jpg: Predicted in 6.746000 milli-seconds.
+guns: 100%	(left_x:  178   top_y:  138   width:  798   height:  508)
+Enter Image Path:  Detection layer: 30 - type = 28 
+ Detection layer: 37 - type = 28 
+data/obj/1cdb986cd69f46f5.jpg: Predicted in 6.867000 milli-seconds.
+guns: 100%	(left_x:  132   top_y:   62   width:  792   height:  588)
+Enter Image Path:  Detection layer: 30 - type = 28 
+ Detection layer: 37 - type = 28 
+data/obj/2c70956de7169c38.jpg: Predicted in 6.782000 milli-seconds.
+swards: 60%	(left_x:  -25   top_y:   -5   width:  795   height:  495)
+swards: 26%	(left_x:  194   top_y:   32   width:  773   height:  584)
+Enter Image Path:  Detection layer: 30 - type = 28 
+ Detection layer: 37 - type = 28 
+data/obj/1e4657e2a8511d04.jpg: Predicted in 6.764000 milli-seconds.
+Enter Image Path:  Detection layer: 30 - type = 28 
+ Detection layer: 37 - type = 28 
+data/obj/1e17e1de0368e2d3.jpg: Predicted in 6.772000 milli-seconds.
+swards: 100%	(left_x:   39   top_y:   75   width:  948   height:  645)
+Enter Image Path:  Detection layer: 30 - type = 28 
+ Detection layer: 37 - type = 28 
+data/obj/0f22eaf0d420239f.jpg: Predicted in 6.802000 milli-seconds.
+guns: 100%	(left_x:  -10   top_y:   98   width:  881   height:  573)
+Enter Image Path:  Detection layer: 30 - type = 28 
+ Detection layer: 37 - type = 28 
+data/obj/0daf487fefb94a84.jpg: Predicted in 6.783000 milli-seconds.
+Enter Image Path:  Detection layer: 30 - type = 28 
+ Detection layer: 37 - type = 28 
+data/obj/0c49a929b8ca1778.jpg: Predicted in 6.757000 milli-seconds.
+swards: 100%	(left_x:   63   top_y:   63   width:  659   height:  915)
+Enter Image Path: 
