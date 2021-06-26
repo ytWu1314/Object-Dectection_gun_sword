@@ -1,6 +1,7 @@
 # 期末作业：物体检测
 
 **本文章参考了 [此链接](http://course.gdou.com/file/source/YOLOv4_win10.pdf)**
+**环境的配置需要耐心，按照参考教程一步步来，遇到报错找博客，这是计算机学生都要会的**
 
 ## 一、 cuda的配置
 
@@ -123,7 +124,7 @@
 
 
 
-4. 把`map\scripts\extra`目录下的`class_list.txt`里面的所有内容删除, **第一行输入guns, 第二行输入swards**, 然后保存文件. 
+4. 把`map\scripts\extra`目录下的`class_list.txt`里面的所有内容删除, 第一行输入guns, 第二行输入swards, 然后保存文件. 
 
 5. 把`yolo-tiny-obj.cfg` 文件里面的`subvision`和`batch` 改为1
 
